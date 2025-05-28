@@ -4,7 +4,7 @@
 ## If not, run /ubuntu/setup.sh script first.
 ##
 ## Usage:
-## sudo bash -c "$(curl -sS https://raw.githubusercontent.com/KiritoGamesPlays/scripts/refs/heads/master/ubuntu/install-wordpress.sh)"
+## sudo bash -c "$(curl -sS https://raw.githubusercontent.com/KiritoGamesPlays/scripts/master/ubuntu/install-wordpress.sh)"
 ##
 
 set -e
@@ -83,15 +83,7 @@ service nginx reload
 echo "Nginx configuration completed."
 
 ## MySQL setup
-echo "Running mysql_secure_installation..."
-mysql_secure_installation <<EOF
-n # Skip setting the root password (auth_socket in use)
-Y # Remove anonymous users for security
-Y # Disallow root login remotely
-Y # Remove test database and access to it
-Y # Reload privilege tables to apply changes
-EOF
-echo "mysql_secure_installation completed."
+
 
 ## MySQL setup for WordPress
 echo "Configuring MySQL for WordPress..."
