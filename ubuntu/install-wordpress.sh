@@ -4,7 +4,7 @@
 ## If not, run /ubuntu/setup.sh script first.
 ##
 ## Usage:
-## sudo bash -c "$(curl -sS https://raw.githubusercontent.com/pietrorea/scripts/master/ubuntu/install-wordpress.sh)"
+## sudo bash -c "$(curl -sS https://raw.githubusercontent.com/KiritoGamesPlays/scripts/refs/heads/master/ubuntu/install-wordpress.sh)"
 ##
 
 set -e
