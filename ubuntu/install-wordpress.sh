@@ -37,7 +37,7 @@ echo "System update and dependency installation completed."
 echo "Installing WordPress dependencies (LEMP stack)..."
 apt-get install -y \
 nginx \
-mysql-server \
+mariadb-server \
 php-curl \
 php-mysql \
 php-gd \
